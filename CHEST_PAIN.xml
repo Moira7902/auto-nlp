@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rubric>
+    <concept max_marks = "10">
+        <title>Main Complaint</title>
+
+        <keyword>chest</keyword>
+
+        <applies key="chest">pain</applies>
+    </concept>
+
+    <concept max_marks = "10">
+        <title>Site</title>
+
+        <keyword>middle</keyword>
+        <keyword>central</keyword>
+        <keyword>breastbone</keyword>
+        <keyword>left</keyword>
+
+        <applies key="behind">the breastbone, his breastbone</applies>
+        <applies key="to">the left, the lt</applies>
+    </concept>
+
+    <concept max_marks = "10">
+        <title>Onset</title>
+
+        <keyword>suddenly</keyword>
+        <keyword>worse</keyword>
+
+        <applies key="went">on</applies>
+    </concept>
+
+    <concept max_marks = "10">
+        <title>Character</title>
+
+        <keyword>sharp</keyword>
+
+        <applies key="catch">the breath, his breath</applies>
+    </concept>
+
+    <concept max_marks = "10">
+        <title>Radiation</title>
+
+        <keyword>stay</keyword>
+
+        <applies key="stays">there</applies>
+        <applies key="no">radiation</applies>
+        <applies key="not">radiate</applies>
+    </concept>
+
+    <concept max_marks = "10">
+        <title>Associated symptoms</title>
+
+        <keyword>nullword</keyword>
+
+        <applies key="without">associated symptoms, symptoms</applies>
+        <applies key="no">associated symptoms, symptoms</applies>
+    </concept>
+
+    <concept max_marks = "10">
+        <title>Timing</title>
+
+        <keyword>constant</keyword>
+
+        <applies key="get">worse</applies>
+    </concept>
+
+    <concept max_marks = "10">
+        <title>Exacerbating and relieving factors</title>
+
+        <keyword>breathing</keyword>
+
+        <applies key="lying">down</applies>
+        <applies key="lean">forwards</applies>
+    </concept>
+
+    <concept max_marks = "10">
+        <title>Severity</title>
+
+        <keyword>bad</keyword>
+
+        <applies key="pretty">bad</applies>
+    </concept>
+
+    <concept max_marks = "10">
+        <title>Ideas</title>
+
+        <keyword>nullword</keyword>
+
+        <applies key="not">know, a clue, got a clue, sure, have an idea</applies>
+        <applies key="no">idea, clue</applies>
+    </concept>
+
+    <concept max_marks = "10">
+        <title>Concerns</title>
+
+        <keyword>father</keyword>
+        <keyword>dad</keyword>
+
+        <applies key="heart">attack</applies>
+        <applies key="myocardial">infarction</applies>
+    </concept>
+
+    <concept max_marks = "10">
+        <title>Expectations</title>
+
+        <keyword>reassure</keyword>
+        <keyword>solve</keyword>
+        <keyword>treatment</keyword>
+
+        <applies key="sort">out, him out</applies>
+    </concept>
+
+    <concept max_marks = "10">
+        <title>Medical History</title>
+
+        <keyword>tonsil</keyword>
+
+        <applies key="tonsils">out</applies>
+    </concept>
+
+    <concept max_marks = "10">
+        <title>Drug History and Allergies</title>
+
+        <keyword>nullword</keyword>
+
+        <applies key="COVID">jab</applies>
+        <applies key="no">medications, drugs, allergies, allergy</applies>
+    </concept>
+
+    <concept max_marks = "10">
+        <title>Family History</title>
+
+        <keyword>dad</keyword>
+        <keyword>father</keyword>
+        <keyword>mi</keyword>
+
+        <applies key="heart">attack</applies>
+        <applies key="myocardial">infarction</applies>
+    </concept>
+
+    <concept max_marks = "10">
+        <title>Social History</title>
+
+        <keyword>smoke</keyword>
+        <keyword>alcohol</keyword>
+        <keyword>cocaine</keyword>
+
+        <applies key="null">word</applies>
+    </concept>
+</rubric>

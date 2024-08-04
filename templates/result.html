@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Bootstrap is a free yet feature-rich and powerful CSS framework containing code to smoothly support the Front-End Web Development process." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>AUTO-NLP – Chest Pain History Taking</title>
+
+  <!--== Favicon ==-->
+  <link rel="shortcut icon" href="static/img/favicon.ico" type="image/x-icon" />
+
+  <!--== Main Style CSS ==-->
+  <link href="static/css/style.css" rel="stylesheet" />
+
+
+</head>
+
+<body>
+
+  <!--wrapper start-->
+  <div class="wrapper home-default-wrapper">
+
+    <!--== Start Preloader Content ==-->
+    <div class="preloader-wrap">
+      <div class="preloader">
+        <span class="dot"></span>
+        <div class="dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <!--== End Preloader Content ==-->
+
+
+    <main class="main-content site-wrapper-reveal">
+      <!--== Start Hero Area Wrapper ==-->
+      <section class="home-slider-area slider-default">
+        <div class="container h-100 position-relative">
+          <div class="row justify-content-center">
+            <div class="col-lg-12">
+              <div class="slider-content-area" data-aos="fade-zoom-in" data-aos-duration="1300">
+                <h2><span>Auto-NLP</span> for <br>A Simulate GP Consultation Scenario</h2>
+                <p>Good job! It seems that you have completed the recording.
+                  <br>Next, let's see if your record is excellent enough......</p>
+              </div>
+            </div>
+          </div>
+          <div class="section-gap">
+            <div class="wrapper">
+              <div class="form-inner-cont">
+                <form action="{{ url_for('index') }}" method="get" class="back">
+                  <div class="form-input">
+                    <label for="SCORATES" style="font-family: Poppins">What is the main complaint and how will you describe the symptoms?(e.g. using SCORATES framework)</label>
+                    <textarea name="SCORATES" id="SCORATES" readonly>{{form_get['SCORATES']}}</textarea>
+                    <h6 style="font-family: Poppins;color: #ce6969">Your score for the first question is <b>{{scores[0]}}/100</b>.</h6>
+                    <p style="font-family: Poppins;color: rgba(206,105,105,0.75)">{{comments[0]}}</p>
+                  </div>
+                  <div class="form-input">
+                    <label for="ICE" style="font-family: Poppins">What ideas, concerns and expectations(ICE) have the patient mentioned?</label>
+                    <textarea name="ICE" id="ICE" readonly>{{form_get['ICE']}}</textarea>
+                    <h6 style="font-family: Poppins;color: #ce6969">Then, you have got <b>{{scores[1]}}/100</b> for the second question.</h6>
+                    <p style="font-family: Poppins;color: rgba(206,105,105,0.75)">{{comments[1]}}</p>
+                  </div>
+                  <div class="form-input">
+                    <label for="History" style="font-family: Poppins">Abstract the history(medical, drug etc.) that the patient gave.</label>
+                    <textarea name="History" id="History" readonly>{{form_get['History']}}</textarea>
+                    <h6 style="font-family: Poppins;color: #ce6969">And in the third question, you successfully obtained <b>{{scores[2]}}/100.</b></h6>
+                    <p style="font-family: Poppins;color: rgba(206,105,105,0.75)">{{comments[2]}}</p>
+                  </div>
+                  <h5 style="font-family: Poppins;color: #ce6969"><br><br>Finally, it seems that your note received a score of ...... <b>{{scores[3]}} out of 100!</b></h5>
+                  <p style="font-family: Poppins;color: rgba(206,105,105,0.75)">{{comments[3]}}</p>
+                  <p style="font-family: Poppins;color: rgba(206,105,105,0.75)">If you want to continue improving your work, you can click the button below to try again.<br><br><br> </p>
+                  <div align="center"><button class="btn btn-theme">Try Again</button></div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="shape-layer">
+            <div class="shape shape-one"></div>
+            <div class="shape shape-two"></div>
+            <div class="shape shape-three"></div>
+            <div class="shape shape-four"></div>
+            <div class="shape shape-five"></div>
+            <div class="shape shape-six"></div>
+            <div class="shape shape-seven"></div>
+            <div class="shape shape-eight"></div>
+          </div>
+        </div>
+        <div class="curve-style">
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="none" viewBox="0 0 100 100">
+            <path d="M 0 0 L0 100 L100 100 L100 0 Q 50 110 0 0"></path>
+          </svg>
+        </div>
+      </section>
+      <!--== End Hero Area Wrapper ==-->
+
+
+
+      <!--== Start Divider Area Wrapper ==-->
+      <section class="divider-area newsletter-area">
+        <div class="container position-relative">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="newsletter-content text-center">
+                <div class="row">
+                  <div class="col-lg-6 m-auto">
+                    <div class="section-title">
+                      <h2 class="title text-uppercase"><span>Your</span> Feedback</h2>
+                    </div>
+                    <div class="slider-content-area">
+                      <p style="font-family: Poppins">Thank you for participating! This is a prototype version, and your feedback can help us improve it better.
+                        <br>Here is an experience questionnaire, we would be happy if you would like to take a few minutes to fill it out:<br></p>
+                      <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=B8tSwU5hu0qBivA1z6kadz2KfflbP2ZLuEpjAH_WdS1UMk43QUlMVklBTjZXMFBSN0VZTlpaQksxQy4u" style="font-size: 20px">Experience Questionnaire</a>
+                    </div>
+                  </div>
+                </div>
+                <img class="bg-shape-img" src="static/img/shape/bg-shape-01.png" alt="Image">
+              </div>
+            </div>
+          </div>
+          <div class="shape-layer">
+            <div class="shape shape-one"></div>
+            <div class="shape shape-two"></div>
+            <div class="shape shape-three"></div>
+            <div class="shape shape-four"></div>
+            <div class="shape shape-five"></div>
+            <div class="shape shape-six"></div>
+            <div class="shape shape-seven"></div>
+            <div class="shape shape-eight"></div>
+          </div>
+        </div>
+      </section>
+      <!--== End Divider Area Wrapper ==-->
+    </main>
+
+    <!--== Start Footer Area Wrapper ==-->
+    <footer class="footer-area reveal-footer">
+      <div class="layer-shape">
+        <img class="layer-shape-two" src="static/img/shape/foooter-shape-02.png" alt="Boseo-Image">
+        <img class="layer-shape-one" src="static/img/shape/foooter-shape-01.png" alt="Boseo-Image">
+      </div>
+    </footer>
+    <!--== End Footer Area Wrapper ==-->
+
+    <!--== Scroll Top Button ==-->
+    <div class="scroll-to-top"><span class="lnr lnr-chevron-up"></span></div>
+
+  </div>
+
+  <!--=======================Javascript============================-->
+
+  <!--=== Modernizr Min Js ===-->
+  <script src="static/js/modernizr.js"></script>
+  <!--=== jQuery Min Js ===-->
+  <script src="static/js/jquery-main.js"></script>
+  <!--=== jQuery Migration Min Js ===-->
+  <script src="static/js/jquery-migrate.js"></script>
+  <!--=== Popper Min Js ===-->
+  <script src="static/js/popper.min.js"></script>
+  <!--=== Bootstrap Min Js ===-->
+  <script src="static/js/bootstrap.min.js"></script>
+  <!--=== jquery UI Min Js ===-->
+  <script src="static/js/jquery-ui.min.js"></script>
+  <!--=== Plugin Collection Js ===-->
+  <script src="static/js/plugincollection.js"></script>
+  <!--=== Isotope Min Js ===-->
+  <script src="static/js/isotope.pkgd.min.js"></script>
+
+
+  <!--=== Custom Js ===-->
+  <script src="static/js/custom.js"></script>
+
+</body>
+
+</html>

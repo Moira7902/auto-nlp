@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Bootstrap is a free yet feature-rich and powerful CSS framework containing code to smoothly support the Front-End Web Development process." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>AUTO-NLP – Chest Pain History Taking</title>
+
+  <!--== Favicon ==-->
+  <link rel="shortcut icon" href="static/img/favicon.ico" type="image/x-icon" />
+
+  <!--== Main Style CSS ==-->
+  <link href="static/css/style.css" rel="stylesheet" />
+
+
+</head>
+
+<body>
+
+  <!--wrapper start-->
+  <div class="wrapper home-default-wrapper">
+
+    <!--== Start Preloader Content ==-->
+    <div class="preloader-wrap">
+      <div class="preloader">
+        <span class="dot"></span>
+        <div class="dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <!--== End Preloader Content ==-->
+
+
+    <main class="main-content site-wrapper-reveal">
+      <!--== Start Hero Area Wrapper ==-->
+      <section class="home-slider-area slider-default">
+        <div class="container h-100 position-relative">
+          <div class="row justify-content-center">
+            <div class="col-lg-12">
+              <div class="slider-content-area" data-aos="fade-zoom-in" data-aos-duration="1300">
+                <h2><span>Auto-NLP</span> for <br>A Simulate GP Consultation Scenario</h2>
+                <p>Harry is a 23-year-old plumber who has some health conditions that need to be discussed with his GP.
+                  <br>After obtaining consent, you were given a learning opportunity to listen in on the conversation.
+                  <br>Now, the task given to you is to take an elegant medical note!</p>
+              </div>
+            </div>
+          </div>
+          <div class="thumb-style" data-aos="fade-up" data-aos-duration="1300">
+            <img src="static/img/slider/video.png" alt="Chest Pain History Taking - OSCE Guide SCA UKMLA CPSA">
+          </div>
+          <div align="center"><p>The audio is from the Geeky Medics channel, click <a href="https://www.youtube.com/@geekymedics">here</a> for more information.</p></div>
+          <div class="shape-layer">
+            <div class="shape shape-one"></div>
+            <div class="shape shape-two"></div>
+            <div class="shape shape-three"></div>
+            <div class="shape shape-four"></div>
+            <div class="shape shape-five"></div>
+            <div class="shape shape-six"></div>
+            <div class="shape shape-seven"></div>
+            <div class="shape shape-eight"></div>
+          </div>
+        </div>
+        <div class="curve-style">
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="none" viewBox="0 0 100 100">
+            <path d="M 0 0 L0 100 L100 100 L100 0 Q 50 110 0 0"></path>
+          </svg>
+        </div>
+      </section>
+      <!--== End Hero Area Wrapper ==-->
+
+
+      <!--== Start About Area ==-->
+      <section class="about-area">
+        <div class="container h-100 position-relative">
+          <div class="row justify-content-center">
+            <div class="col-lg-12">
+              <div class="about-content" data-aos="fade-up" data-aos-duration="1300">
+                <div class="section-title">
+                  <h2 class="title"><span>Begin</span> Your Recording</h2>
+                  <p style="font-family: Poppins;margin-bottom: -50px" >Listen to their conversation, take notes based on the key points provided below.
+                  <br>To simulate a real conversation scenario, you are expected to listen to the audio only once per attempt.
+                  <br>Please note that you should try to use the patient's own words as far as possible.</p>
+                  <div class="contact-info-style contact-info-content">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="contact-info-item item-style-two pt-0">
+                          <div class="icon">
+                            <i class="icon_phone"></i>
+                          </div>
+                          <div class="content">
+                            <h4>Listening to the Audio</h4>
+                            <audio controls src="static/media/audio.mp3"></audio>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="section-gap">
+                  <div class="wrapper">
+                    <div class="form-inner-cont">
+                      <form action="{{ url_for('process_form') }}" method="post" class="signin-form">
+                        <div class="form-input">
+                          <label for="SCORATES" style="font-family: Poppins">What is the main complaint and how will you describe the symptoms?(e.g. using SCORATES framework)</label>
+                          <textarea name="SCORATES" id="SCORATES" required=""></textarea>
+                        </div>
+                        <div class="form-input">
+                          <label for="ICE" style="font-family: Poppins">What ideas, concerns and expectations(ICE) have the patient mentioned?</label>
+                          <textarea name="ICE" id="ICE" required=""></textarea>
+                        </div>
+                        <div class="form-input">
+                          <label for="History" style="font-family: Poppins">Abstract the history(medical, drug etc.) that the patient gave.</label>
+                          <textarea name="History" id="History" required=""></textarea>
+                        </div>
+                        <div align="center"><button class="btn btn-theme">Submit Your Answer</button></div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--== End About Area ==-->
+
+    <!--== Scroll Top Button ==-->
+    <div class="scroll-to-top"><span class="lnr lnr-chevron-up"></span></div>
+
+
+  <!--=======================Javascript============================-->
+
+  <!--=== Modernizr Min Js ===-->
+  <script src="static/js/modernizr.js"></script>
+  <!--=== jQuery Min Js ===-->
+  <script src="static/js/jquery-main.js"></script>
+  <!--=== jQuery Migration Min Js ===-->
+  <script src="static/js/jquery-migrate.js"></script>
+  <!--=== Popper Min Js ===-->
+  <script src="static/js/popper.min.js"></script>
+  <!--=== Bootstrap Min Js ===-->
+  <script src="static/js/bootstrap.min.js"></script>
+  <!--=== jquery UI Min Js ===-->
+  <script src="static/js/jquery-ui.min.js"></script>
+  <!--=== Plugin Collection Js ===-->
+  <script src="static/js/plugincollection.js"></script>
+  <!--=== Isotope Min Js ===-->
+  <script src="static/js/isotope.pkgd.min.js"></script>
+
+
+  <!--=== Custom Js ===-->
+  <script src="static/js/custom.js"></script>
+
+</body>
+
+</html>
